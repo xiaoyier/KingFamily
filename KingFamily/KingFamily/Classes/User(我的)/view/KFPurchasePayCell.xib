@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="KFPurchasePayCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pay_ali" translatesAutoresizingMaskIntoConstraints="NO" id="ZXJ-Yf-nBq">
+                        <rect key="frame" x="20" y="10" width="40" height="39.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Kzq-Os-lv0"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QxE-hF-eBX">
+                        <rect key="frame" x="70" y="19" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfF-bm-SVk">
+                        <rect key="frame" x="288" y="19" width="22" height="22"/>
+                        <state key="normal" image="checkbox"/>
+                        <state key="selected" image="checkbox_selected"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QxE-hF-eBX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="04m-8Z-u6O"/>
+                    <constraint firstItem="ZXJ-Yf-nBq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="6a9-Rx-0d8"/>
+                    <constraint firstAttribute="trailing" secondItem="MfF-bm-SVk" secondAttribute="trailing" constant="10" id="8Ol-Lw-cIu"/>
+                    <constraint firstItem="QxE-hF-eBX" firstAttribute="leading" secondItem="ZXJ-Yf-nBq" secondAttribute="trailing" constant="10" id="RZQ-Uc-OVt"/>
+                    <constraint firstAttribute="bottom" secondItem="ZXJ-Yf-nBq" secondAttribute="bottom" constant="10" id="Xpq-bC-Nmb"/>
+                    <constraint firstItem="ZXJ-Yf-nBq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="c05-iZ-2gJ"/>
+                    <constraint firstItem="MfF-bm-SVk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="t14-VV-DWY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconView" destination="ZXJ-Yf-nBq" id="ndV-UL-VUj"/>
+                <outlet property="payWay" destination="QxE-hF-eBX" id="E28-pg-YDH"/>
+                <outlet property="selectBtn" destination="MfF-bm-SVk" id="YVh-eJ-Tmh"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkbox" width="22" height="22"/>
+        <image name="checkbox_selected" width="22" height="22"/>
+        <image name="pay_ali" width="26" height="26"/>
+    </resources>
+</document>

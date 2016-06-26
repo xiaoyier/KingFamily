@@ -1,0 +1,26 @@
+//
+//  KingFamily.pch
+//  KingFamily
+//
+//  Created by 张强 on 16/4/15.
+//  Copyright © 2016年 King. All rights reserved.
+//
+
+#ifndef KingFamily_pch
+#define KingFamily_pch
+
+#import "KingFamily.h"
+
+#endif 
+
+
+//编译阶段使用KFLog替代NSLog
+#ifdef DEBUG
+
+#define KFLog(...)           NSLog(__VA_ARGS__)
+
+#else
+
+#define KFLog(...)
+
+#endif

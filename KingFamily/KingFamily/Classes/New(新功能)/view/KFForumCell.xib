@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="KFForumCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="母婴健康" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eO-Sn-MgQ">
+                        <rect key="frame" x="10" y="11" width="68" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cKQ-Jk-Izm">
+                        <rect key="frame" x="261" y="6" width="51" height="31"/>
+                    </switch>
+                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="shg-l9-NFs">
+                        <rect key="frame" x="0.0" y="42.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="mek-jm-fER"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="shg-l9-NFs" secondAttribute="trailing" id="F2z-cR-jWI"/>
+                    <constraint firstItem="shg-l9-NFs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="FFf-sf-xlm"/>
+                    <constraint firstItem="4eO-Sn-MgQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="LjT-nA-ZOu"/>
+                    <constraint firstItem="4eO-Sn-MgQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VRk-WX-LvV"/>
+                    <constraint firstItem="cKQ-Jk-Izm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ve2-bl-isM"/>
+                    <constraint firstAttribute="trailing" secondItem="cKQ-Jk-Izm" secondAttribute="trailing" constant="10" id="WTN-Wz-z2r"/>
+                    <constraint firstAttribute="bottom" secondItem="shg-l9-NFs" secondAttribute="bottom" id="WdV-Te-Tdm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleLabel" destination="4eO-Sn-MgQ" id="1sC-YL-xFm"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

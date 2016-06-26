@@ -1,0 +1,1 @@
+重要：由于github对大文件的限制，单文件超过100M的不能push到github远程仓库上，该项目集成了百度导航的功能，由于百度导航SDK里面静态库太大，无法push,所以对其进行了压缩处理，需要将该压缩包解压一下即可，目录：KingFamily/Classes/Lib/BaiduNavi_iOSSDK_v2.0.7_Lib.rar,谢谢！

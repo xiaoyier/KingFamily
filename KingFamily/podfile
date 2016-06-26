@@ -1,0 +1,10 @@
+platform :ios,'7.0'
+pod 'SDWebImage' , '~>3.7.5'
+pod 'MJExtension' , '~>3.0.0'
+pod 'MJRefresh' , '3.1.0'
+pod 'AFNetworking' , '3.1.0'
+pod 'Masonry' , '~>1.0'
+pod 'UMengSocialCOM', '~> 5.2.1'
+pod 'FMDB' , '~>2.6'
+pod 'pop', '~> 1.0.9'
+pod 'BaiduMapKit' #百度地图SDK

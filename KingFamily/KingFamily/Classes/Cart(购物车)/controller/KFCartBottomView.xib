@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KFCartBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gun-3J-AnA">
+                    <rect key="frame" x="294" y="0.0" width="120" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.3425334573046358" blue="0.05679315198101742" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="qsT-Ef-fXE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="去结算"/>
+                    <connections>
+                        <action selector="gotoAccount:" destination="iN0-l3-epB" eventType="touchUpInside" id="XHg-eM-1ey"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQk-ZC-53b">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="bfx-pV-Kz9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="全选" image="checkbox">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" title="全选" image="checkbox_selected"/>
+                    <connections>
+                        <action selector="SelectAll:" destination="iN0-l3-epB" eventType="touchUpInside" id="C0B-d7-tC7"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总计 ：415" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wE-kc-E5p">
+                    <rect key="frame" x="209" y="12.5" width="74.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="1" green="0.34253345730000001" blue="0.056793151979999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrc-bB-Zzr">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="A5j-Bx-MJo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Gun-3J-AnA" secondAttribute="bottom" id="15C-9f-Uer"/>
+                <constraint firstAttribute="trailing" secondItem="zrc-bB-Zzr" secondAttribute="trailing" id="1pd-MZ-kC6"/>
+                <constraint firstItem="zrc-bB-Zzr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2D4-fK-Avy"/>
+                <constraint firstItem="zrc-bB-Zzr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4hm-kI-9kZ"/>
+                <constraint firstAttribute="trailing" secondItem="Gun-3J-AnA" secondAttribute="trailing" id="5HK-wZ-pxO"/>
+                <constraint firstItem="Gun-3J-AnA" firstAttribute="leading" secondItem="0wE-kc-E5p" secondAttribute="trailing" constant="10" id="7EC-cu-Iet"/>
+                <constraint firstItem="0wE-kc-E5p" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="DNg-F1-7Ls"/>
+                <constraint firstItem="uQk-ZC-53b" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="d5K-Pn-5jG"/>
+                <constraint firstItem="uQk-ZC-53b" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jGd-S5-brL"/>
+                <constraint firstAttribute="bottom" secondItem="uQk-ZC-53b" secondAttribute="bottom" id="lgU-Kr-3Hq"/>
+                <constraint firstItem="Gun-3J-AnA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="q3r-1T-v72"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="allCountLabel" destination="0wE-kc-E5p" id="Kk2-SA-wh5"/>
+                <outlet property="allSelectBtn" destination="uQk-ZC-53b" id="vZI-iR-ev8"/>
+                <outlet property="gotoAccountBtn" destination="Gun-3J-AnA" id="eJ0-2T-jkX"/>
+                <outlet property="topLine" destination="zrc-bB-Zzr" id="anA-ws-4Kx"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkbox" width="22" height="22"/>
+        <image name="checkbox_selected" width="22" height="22"/>
+    </resources>
+</document>

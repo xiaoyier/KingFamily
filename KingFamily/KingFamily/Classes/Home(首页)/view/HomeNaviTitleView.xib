@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="97e-ZW-x9b" customClass="HomeNaviTitleView">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="20"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="aeE-VY-dLQ">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="aCs-ZT-hXK"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1u-hD-ClA" customClass="KFHomeTitleButton">
+                    <rect key="frame" x="100" y="8" width="40" height="12"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="aeE-VY-dLQ" firstAttribute="leading" secondItem="97e-ZW-x9b" secondAttribute="leading" id="TcB-J7-UeD"/>
+                <constraint firstAttribute="bottom" secondItem="aeE-VY-dLQ" secondAttribute="bottom" id="Vet-gj-Ks5"/>
+                <constraint firstAttribute="bottom" secondItem="l1u-hD-ClA" secondAttribute="bottom" id="aGI-w3-NT0"/>
+                <constraint firstItem="l1u-hD-ClA" firstAttribute="top" secondItem="97e-ZW-x9b" secondAttribute="top" constant="8" id="dfr-o5-Gqr"/>
+                <constraint firstAttribute="trailing" secondItem="l1u-hD-ClA" secondAttribute="trailing" constant="10" id="oUo-C2-Nph"/>
+                <constraint firstItem="l1u-hD-ClA" firstAttribute="leading" secondItem="aeE-VY-dLQ" secondAttribute="trailing" id="vmX-za-dAC"/>
+                <constraint firstItem="aeE-VY-dLQ" firstAttribute="top" secondItem="97e-ZW-x9b" secondAttribute="top" id="wG8-iT-7rr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dropMenuButton" destination="l1u-hD-ClA" id="cc7-D7-NZH"/>
+                <outlet property="titleView" destination="aeE-VY-dLQ" id="K78-Su-ajy"/>
+            </connections>
+            <point key="canvasLocation" x="405" y="306"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_logo.png" width="70" height="20"/>
+    </resources>
+</document>

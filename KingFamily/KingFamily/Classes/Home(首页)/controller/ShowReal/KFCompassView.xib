@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="hDq-HD-2f6" customClass="KFCompassView">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="1Kd-vG-3ML">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sj" translatesAutoresizingMaskIntoConstraints="NO" id="uGR-G2-zJK">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1Kd-vG-3ML" firstAttribute="top" secondItem="hDq-HD-2f6" secondAttribute="top" id="Jhs-pj-sO7"/>
+                <constraint firstAttribute="bottom" secondItem="uGR-G2-zJK" secondAttribute="bottom" id="MaS-cP-hE2"/>
+                <constraint firstItem="1Kd-vG-3ML" firstAttribute="leading" secondItem="hDq-HD-2f6" secondAttribute="leading" id="MwB-Fp-exY"/>
+                <constraint firstAttribute="trailing" secondItem="uGR-G2-zJK" secondAttribute="trailing" id="Wxy-tU-W01"/>
+                <constraint firstItem="uGR-G2-zJK" firstAttribute="top" secondItem="hDq-HD-2f6" secondAttribute="top" id="iSp-EE-Lov"/>
+                <constraint firstAttribute="trailing" secondItem="1Kd-vG-3ML" secondAttribute="trailing" id="mJg-U1-syK"/>
+                <constraint firstItem="uGR-G2-zJK" firstAttribute="leading" secondItem="hDq-HD-2f6" secondAttribute="leading" id="oK9-Qs-LbE"/>
+                <constraint firstAttribute="bottom" secondItem="1Kd-vG-3ML" secondAttribute="bottom" id="zgG-ZZ-kfP"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="direcitionView" destination="uGR-G2-zJK" id="H69-M6-WQE"/>
+            </connections>
+            <point key="canvasLocation" x="431" y="410"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="compass" width="80" height="80"/>
+        <image name="sj" width="80" height="80"/>
+    </resources>
+</document>

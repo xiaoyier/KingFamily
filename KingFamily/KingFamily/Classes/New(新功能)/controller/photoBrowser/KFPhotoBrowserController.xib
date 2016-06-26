@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KFPhotoBrowserController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pps-H7-byI">
+                    <rect key="frame" x="40" y="536" width="90" height="34"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.52617251629999995" blue="0.98290687919463071" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="Rva-Yb-9SC"/>
+                    </constraints>
+                    <state key="normal" title="取消"/>
+                    <connections>
+                        <action selector="cancel:" destination="-1" eventType="touchUpInside" id="Ryt-3M-6Tb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TkE-6P-Z8i">
+                    <rect key="frame" x="470" y="536" width="90" height="34"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.52617251629999995" blue="0.98290687919463071" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="xtr-Xd-b1D"/>
+                    </constraints>
+                    <state key="normal" title="完成"/>
+                    <connections>
+                        <action selector="save:" destination="-1" eventType="touchUpInside" id="lL0-PM-XUL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TkE-6P-Z8i" secondAttribute="trailing" constant="40" id="2Ve-FW-YJ8"/>
+                <constraint firstAttribute="bottom" secondItem="Pps-H7-byI" secondAttribute="bottom" constant="30" id="6mP-82-G2t"/>
+                <constraint firstAttribute="bottom" secondItem="TkE-6P-Z8i" secondAttribute="bottom" constant="30" id="IBK-dJ-VfP"/>
+                <constraint firstItem="Pps-H7-byI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="rLi-3o-5t4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

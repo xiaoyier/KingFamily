@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KFLocationViewController">
+            <connections>
+                <outlet property="mapView" destination="8LA-oX-HYG" id="47a-MU-mJi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8LA-oX-HYG" customClass="BMKMapView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sdl-6R-ZC1">
+                    <rect key="frame" x="0.0" y="560" width="600" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDY-xn-s81">
+                            <rect key="frame" x="10" y="3" width="36" height="34"/>
+                            <state key="normal" title="定位">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="locate:" destination="-1" eventType="touchUpInside" id="649-hH-e9s"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAm-JQ-Py3">
+                            <rect key="frame" x="554" y="3" width="36" height="34"/>
+                            <state key="normal" title="更多">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="more:" destination="-1" eventType="touchUpInside" id="aAQ-YS-PbB"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBv-ll-EXV">
+                            <rect key="frame" x="508" y="3" width="36" height="34"/>
+                            <state key="normal" title="实景">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="showReal:" destination="-1" eventType="touchUpInside" id="dFd-VF-jrV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.56593435402684567" green="0.54697986577181212" blue="0.57728607382550334" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="7LZ-br-tZ0"/>
+                        <constraint firstItem="uAm-JQ-Py3" firstAttribute="centerY" secondItem="sdl-6R-ZC1" secondAttribute="centerY" id="8wP-wN-MNZ"/>
+                        <constraint firstItem="sDY-xn-s81" firstAttribute="leading" secondItem="sdl-6R-ZC1" secondAttribute="leading" constant="10" id="99E-1Y-DE6"/>
+                        <constraint firstItem="uAm-JQ-Py3" firstAttribute="leading" secondItem="zBv-ll-EXV" secondAttribute="trailing" constant="10" id="Nvb-aD-Os7"/>
+                        <constraint firstAttribute="trailing" secondItem="uAm-JQ-Py3" secondAttribute="trailing" constant="10" id="OgU-Fo-9Yu"/>
+                        <constraint firstItem="sDY-xn-s81" firstAttribute="centerY" secondItem="sdl-6R-ZC1" secondAttribute="centerY" id="Yku-Fe-ISU"/>
+                        <constraint firstItem="zBv-ll-EXV" firstAttribute="centerY" secondItem="sdl-6R-ZC1" secondAttribute="centerY" id="mLT-sl-Nab"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8LA-oX-HYG" secondAttribute="trailing" id="3Pn-mx-z0s"/>
+                <constraint firstAttribute="bottom" secondItem="8LA-oX-HYG" secondAttribute="bottom" id="J0w-mf-V2D"/>
+                <constraint firstItem="8LA-oX-HYG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VwN-Ah-z9z"/>
+                <constraint firstItem="sdl-6R-ZC1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fQW-9x-ihR"/>
+                <constraint firstItem="8LA-oX-HYG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rN1-La-N5x"/>
+                <constraint firstAttribute="bottom" secondItem="sdl-6R-ZC1" secondAttribute="bottom" id="wyQ-HX-Zid"/>
+                <constraint firstAttribute="trailing" secondItem="sdl-6R-ZC1" secondAttribute="trailing" id="xiG-Fq-70z"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
